@@ -1,0 +1,49 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color:  #e84610;
+    transform: translate(100px, 100px);
+    transform:  skew(25deg);
+    transform: rotate(95deg);
+}
+
+img {
+    height: 250px;
+    width: 250px;
+    transition-property: width, height;
+    transition-duration:  1s;
+    border-radius: 50%;
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+    
+}
+
+img:hover {
+    height: 500px;
+    width: 500px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-property: width, height;
+}
+.element {
+    background-color: #bada44;
+    width: 200px;
+    height: 200px;
+    transition: transform 1s ease-in-out;
+}
+
+.element:hover {
+   transform:  translateX(100%)
+}
+    
+
+ 
+ @keyframes spin { 
+        from { 
+            transform: rotate(0deg); 
+        } to { 
+            transform: rotate(360deg); 
+        }
+}
